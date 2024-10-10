@@ -16,6 +16,8 @@ const feels = document.querySelector('#feels')
 const precipitation = document.querySelector('#precipitation')
 const errorMsg = document.querySelector('#error')
 
+errorMsg.textContent="Provide Location"
+
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
