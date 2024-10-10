@@ -1,9 +1,7 @@
-console.log("JS file is loaded")
+
 
 const currentDate = new Date().toJSON().slice(0, 10);
 const strDate=currentDate.toString()
-console.log(currentDate)
-console.log(strDate)
 
 
 const weatherForm = document.querySelector('form');
