@@ -35,7 +35,8 @@ weatherForm.addEventListener('submit', (e) => {
         // console.log("Please provide location")
         errorMsg.textContent = "Please provide location"
     } else {
-        const url = 'http://localhost:3000/weather?address=' + inputLocation
+        // const url = 'http://localhost:3000/weather?address=' + inputLocation
+        const url = '/weather?address=' + inputLocation
         fetch(url).then((response) => {
             response.json().then((data) => {
                 if (data.error) {
